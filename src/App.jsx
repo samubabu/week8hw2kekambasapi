@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Button from "./components/Button";
 import Navbar from "./components/Navbar";
+import Kekambas from "src/components/Kekambas.jsx"
 
 
 function App() {
@@ -26,7 +27,9 @@ function App() {
                 <h1>Hello World</h1>
                 <h4 className='text-center'>Count: {count}</h4>
                 {buttons.map((button, idx) => <Button color={button.color} step={button.step} key={idx} handleClick={handleClick}/>)}
+                
             </div>
+            
         </>
     )
 }
